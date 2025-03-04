@@ -1,1 +1,31 @@
+import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const InspireMeApp());
+}
+
+class InspireMeApp extends StatelessWidget {
+  const InspireMeApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const MotivationPage(),
+    );
+  }
+}
+
+class MotivationPage extends StatelessWidget {
+  const MotivationPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.lightBlue[50], // Warna latar belakang yang lembut
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(70.0), // Ukuran AppBar lebih tinggi
+        child: AppBar(
+          title: const Text(
+            'Iam Rise & Shine ✨', // Nama AppBar yang lebih menarik
+            style: TextStyle(
